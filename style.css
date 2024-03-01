@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+header {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(./images/backgroun.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  min-height: 100px;
+}
+ul {
+  float: right;
+  list-style: none;
+  margin-top: 30px;
+  min-height: 400px;
+  margin-right: 40px;
+  font-size: 16px;
+}
+ul li {
+  display: inline-block;
+}
+ul li a {
+  text-decoration: none;
+  font-size: 15px;
+  color: aliceblue;
+  padding: 5px 20px;
+  border: 3px solid transparent;
+  transition: 0.5s;
+}
+ul li a:hover {
+  background-color: blueviolet;
+  color: #000;
+}
+.logo img {
+  float: left;
+  width: 150px;
+  height: auto;
+}
+.main {
+  max-width: 1200px;
+  margin: auto;
+}
+.title {
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.title h1 {
+  color: #fff;
+  font-size: 70px;
+}
+.button {
+  position: absolute;
+  top: 54%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.btn {
+  border: 1px solid #fff;
+  padding: 5px 20px;
+  color: #fff;
+  transition: 0.5s ease;
+  font-size: 18px;
+  text-decoration: none;
+}
+.btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+/* .sub_menu a {
+  font-size: 16px;
+  list-style: none;
+  margin-bottom: 30px;
+  min-height: 40px;
+} */
+.sub_menu ul a:hover {
+  background-color: aquamarine;
+}
+.sub_menu {
+  display: none;
+  top: 6%;
+  position: relative;
+}
+.sub_menu ul {
+  position: absolute;
+}
+.main ul li:hover .sub_menu {
+  display: block;
+  position: absolute;
+  background-color: rgba(8, 45, 117);
+  margin-top: 12px;
+  margin-left: -8px;
+}
+.main ul li:hover .sub_menu {
+  display: block;
+  margin: 6px;
+}
+.main ul li:hover .sub_menu ul li {
+  width: 75px;
+  padding: 5px;
+  border-bottom: 1px #fff;
+  background: transparent;
+  transition: 0.6s ease;
+  text-align: left;
+  border-radius: 0px;
+}
